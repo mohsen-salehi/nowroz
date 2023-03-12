@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.woff?2e045c042438e8dfc4f9391e3d29a73b") format("woff"),
+url("./icons.woff2?2e045c042438e8dfc4f9391e3d29a73b") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bold-star:before {
+    content: "\f101";
+}
+.icon-outline-call:before {
+    content: "\f102";
+}
+.icon-outline-home-2:before {
+    content: "\f103";
+}
+.icon-outline-message:before {
+    content: "\f104";
+}
+.icon-outline-teacher:before {
+    content: "\f105";
+}
