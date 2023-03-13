@@ -34,6 +34,7 @@
 */
 
 html {
+  scroll-behavior: smooth !important;
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -43,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Yekan Bakh FaNum;
+  font-family: Yekan Bakh FaNum !important;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -104,8 +105,8 @@ Reset links to optimize for opt-in styling instead of opt-out.
 */
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+  color: inherit !important;
+  text-decoration: inherit !important;
 }
 
 /*
@@ -126,7 +127,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -420,7 +421,7 @@ video {
 }
 
 @font-face {
-  font-family: Yekan Bakh FaNum;
+  font-family: Yekan Bakh FaNum !important;
 
   font-style: normal;
 
@@ -431,7 +432,7 @@ video {
 }
 
 @font-face {
-  font-family: Yekan Bakh FaNum;
+  font-family: Yekan Bakh FaNum !important;
 
   font-style: normal;
 
@@ -750,9 +751,19 @@ body {
 
 /* hero */
 
-.hero {
-  display: grid;
-  gap: 1.5rem;
+@media (max-width: 300px) {
+  .hero {
+    display: flex ;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 401px) {
+  .hero {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -766,9 +777,7 @@ body {
   margin-right: 0.75rem;
 }
 
-.hero_left {
-  grid-column: span 5 / span 5;
-}
+
 
 .hero_title {
   margin-bottom: 1.5rem;
@@ -1307,3 +1316,6 @@ body {
     line-height: 1.25rem;
   }
 }
+
+
+
