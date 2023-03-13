@@ -667,7 +667,7 @@ body {
 }
 
 .header {
-    background-image: url("../images/header-bg.svg");
+    background-image: url("../src/images/header-bg.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -774,7 +774,7 @@ body {
         content: "";
         width: 100%;
         height: 100%;
-        background-image: url("../src/img/zangole-min.png");
+        background-image: url("../src/images/zangole-min.png");
         background-repeat: no-repeat;
         right: -80%;
         top: -10%;
@@ -785,7 +785,7 @@ body {
         content: "";
         width: 100%;
         height: 100%;
-        background-image: url("../src/img/gift-min.png");
+        background-image: url("../src/images/gift-min.png");
         background-repeat: no-repeat;
         right: 18%;
         top: 0;
